@@ -1,4 +1,4 @@
-const notes = [
+const NOTES = [
   {
     id: 1,
     title: 'Recipe',
@@ -52,5 +52,5 @@ Array.prototype.myFilter = function (callback) {
 
   return result;
 }
-const markedNotes = notes.myFilter(el => el.isMarked === true);
+const markedNotes = NOTES.myFilter(note => note.isMarked === true);
 console.log(markedNotes);

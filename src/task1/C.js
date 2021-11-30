@@ -20,9 +20,3 @@ const getUniqElem = function (num) {
 
 }
 console.log(getUniqElem(array));
-
-
-
-
-
-

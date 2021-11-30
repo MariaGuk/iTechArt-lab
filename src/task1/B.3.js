@@ -1,4 +1,4 @@
-const notes = [
+const NOTES = [
   {
     id: 1,
     title: 'Recipe',
@@ -51,5 +51,5 @@ Array.prototype.myReduce = function (callback, initialValue) {
   return accumulator;
 }
 
-const numberOfPages = notes.myReduce((prev, curr) => prev + curr.pagesCount, 0);
+const numberOfPages = NOTES.myReduce((prev, curr) => prev + curr.pagesCount, 0);
 console.log(numberOfPages);

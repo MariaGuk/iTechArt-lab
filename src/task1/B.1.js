@@ -1,4 +1,4 @@
-const notes = [
+cons = NOTES = [
   {
     id: 1,
     title: 'Recipe',
@@ -48,10 +48,8 @@ Array.prototype.myMap = function (callback) {
   return result;
 }
 
-const a = notes.map(item => {
-  const container = {};
-  container['id'] = item.id;
-  container['title'] = item.title;
-  return container
-})
-console.log(a);
+const newArray = NOTES.myMap(note => ({
+  id: note.id,
+  title: note.title,
+}))
+console.log(newArray);
