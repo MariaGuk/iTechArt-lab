@@ -1,0 +1,24 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src ",
+    "lint-fix": "eslint ./src --fix",
+    "precommit": "lint-staged",
+    "eslint": "node_modules/.bin/eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaGuk/iTechArt-lab"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-eslint-comments": "^3.2.0"
+  }
+}
