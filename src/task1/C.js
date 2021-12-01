@@ -16,7 +16,8 @@ const getUniqElem = function (num) {
     }
     sumOfAllNum += current;
   }
-  return sumOfUniq * 2 - sumOfAllNum
+  const result = sumOfUniq * 2 - sumOfAllNum
+  return result;
 
 }
 console.log(getUniqElem(array));

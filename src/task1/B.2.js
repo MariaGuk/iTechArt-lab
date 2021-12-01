@@ -52,5 +52,5 @@ Array.prototype.myFilter = function (callback) {
 
   return result;
 }
-const markedNotes = NOTES.myFilter(note => note.isMarked === true);
+const markedNotes = NOTES.myFilter(note => note.isMarked);
 console.log(markedNotes);

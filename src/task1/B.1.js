@@ -1,4 +1,4 @@
-cons = NOTES = [
+const NOTES = [
   {
     id: 1,
     title: 'Recipe',
