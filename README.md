@@ -22,4 +22,4 @@
 >
 > ### Part B
 >
-> _Fixed error in the constructor_ <br/>[Look here](https://codepen.io/pen/?editors=1112)
+> _Fixed error in the constructor_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/wvraWaP)
