@@ -8,9 +8,9 @@
 function Robot(name) {
   this.name = name;
 }
-function add(op1, op2) {
+function add(number1, number2) {
   this.name = this.name || 'Human';
-  return this.name + ' can count to ' + (op1 + op2);
+  return this.name + ' can count to ' + (number1 + number2);
 }
 
 let voltron = new Robot('Voltron');

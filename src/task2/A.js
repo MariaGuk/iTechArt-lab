@@ -9,23 +9,23 @@ function testThis(y) {
 
 testThis(100);
 
-const boundFunction = testThis.bind(context, 100)()
+const boundFunction = testThis.bind(context, 100)();
 
 
 // Part 2 Bind 
 const human = { name: 'Bob', age: 36 };
 function info(phone, email) {
-  console.log(`Имя:${this.name}, Возраст:${this.age}, Тел:${phone}, email:${email}`);
+  console.log(`Имя:${this.name}, Возраст:${this.age}, Тел:${phone}, email:${email}`)
 };
 
 function myBind(func, context, ...rest) {
   return function () {
-    const uniqId = Date.now().toString
+    const uniqId = Date.now().toString;
 
     context[uniqId] = func;
 
-    const result = context[uniqId](...rest)
-    return result
+    const result = context[uniqId](...rest);
+    return result;
   };
 };
 
