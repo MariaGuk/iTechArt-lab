@@ -28,8 +28,8 @@
 
 > ### Part A
 >
-> _Table with data_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/XWedbKN?editors=1011) 
+> _Table with data_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/XWedbKN?editors=1010)
 >
 > ### Part B
 >
-> _Implemented copied inputs_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/poWyJgv)
+> _Implemented copied inputs_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/poWyJgv?editors=1010)

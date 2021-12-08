@@ -25,41 +25,47 @@ const DOWNLOADS = [
     status: 'Failed'
   }
 ];
+const DOWNLOAD_STATUSES = {
+  pending: 'Pending',
+  success: 'Done',
+  failed: 'Failed',
+};
 
 const row = document.getElementById('status');
+const button = document.getElementById('btn');
+const delay = 3000;
+const repeat = 5000;
 
-let downloadStatus = DOWNLOADS.map(item => {
-  return item.status;
-});
+let downloadStatus = DOWNLOADS.map(file => file.status);
+
 const statuses = downloadStatus.join(',');
+console.log();
 
 
 function changeStatus() {
-  btn.addEventListener("click", function changeStatus() {
-    if (downloadStatus != 'Pending') {
-      const newStr = statuses.replace(/pending/gi, 'Done');
-      const newArr = newStr.split(',');
+  button.addEventListener("click", function changeStatus() {
+    if (downloadStatus != DOWNLOAD_STATUSES.pending) {
+      const replacedStatus = statuses.replace(/pending/gi, DOWNLOAD_STATUSES.success);
+      const endValueList = replacedStatus.split(',');
       let counter = 0;
-      const length = newArr.length - 1;
+      const arrayLength = endValueList.length - 1;
 
       const timer = setInterval(() =>
         setTimeout(() => {
           counter++;
-          row.cells[counter].innerText = newArr[counter];
+          row.cells[counter].innerText = endValueList[counter];
 
           console.log('Check started');
 
-          if (counter === length) {
+          if (counter === arrayLength) {
             clearInterval(timer);
           }
 
-        }, 3000), 5000);
+        }, delay), repeat);
     };
   });
 };
 
-do {
-  changeStatus();
-} while ('Pending' in downloadStatus);
+changeStatus();
 
 
