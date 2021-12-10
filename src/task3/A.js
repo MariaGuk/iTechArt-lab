@@ -33,14 +33,11 @@ const DOWNLOAD_STATUSES = {
 
 const row = document.getElementById('status');
 const button = document.getElementById('btn');
-const delay = 3000;
-const repeat = 5000;
+const DELAY = 3000;
+const REPEAT = 5000;
 
-let downloadStatus = DOWNLOADS.map(file => file.status);
-
+const downloadStatus = DOWNLOADS.map(file => file.status);
 const statuses = downloadStatus.join(',');
-console.log();
-
 
 function changeStatus() {
   button.addEventListener("click", function changeStatus() {
@@ -61,7 +58,7 @@ function changeStatus() {
             clearInterval(timer);
           }
 
-        }, delay), repeat);
+        }, DELAY), REPEAT);
     };
   });
 };

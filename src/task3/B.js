@@ -1,14 +1,14 @@
-let TYPING_TIMER;
+let typingTimer;
 const DONE_TYPING_INTERVAL = 1000;
 const originalInput = document.getElementById('original_input');
 const copiedInput = document.getElementById('copied_input');
 
 originalInput.addEventListener('keyup', () => {
-  TYPING_TIMER = setTimeout(originalDoneTyping, DONE_TYPING_INTERVAL);
+  typingTimer = setTimeout(originalDoneTyping, DONE_TYPING_INTERVAL);
 });
 
 copiedInput.addEventListener('keyup', () => {
-  TYPING_TIMER = setTimeout(doneTyping, DONE_TYPING_INTERVAL);
+  typingTimer = setTimeout(doneTyping, DONE_TYPING_INTERVAL);
 });
 
 function originalDoneTyping() {
