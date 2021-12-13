@@ -23,3 +23,13 @@
 > ### Part B
 >
 > _Fixed error in the constructor_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/wvraWaP)
+
+# Task 3
+
+> ### Part A
+>
+> _Table with data_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/XWedbKN?editors=1011)
+>
+> ### Part B
+>
+> _Implemented copied inputs_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/poWyJgv)
