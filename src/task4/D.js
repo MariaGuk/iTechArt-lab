@@ -6,13 +6,18 @@ class HttpError extends Error {
   };
 };
 
+const STATUSES = {
+  success: '200',
+  clientError: '404'
+};
+
 async function loadJson(url) {
   let response = await fetch(url);
-  if (response.status == 200) {
+  if (response.status == STATUSES.success) {
     return response.json();
   } else {
     throw new HttpError(response);
-  }
+  };
 };
 
 async function demoGithubUser() {
@@ -25,7 +30,7 @@ async function demoGithubUser() {
       return user;
       break;
     } catch (err) {
-      if (err instanceof HttpError && err.response.status == 404) {
+      if (err instanceof HttpError && err.response.status == STATUSES.clientError) {
         alert("We can't find such user.");
       } else {
         throw err;

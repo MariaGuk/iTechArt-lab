@@ -38,7 +38,7 @@
 
 > ### Part A
 >
-> _'Hi' with 2 seconds delay_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/MWEedrY?editors=1112)
+> _'Hi' with 2 seconds delay_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/MWEedrY)
 >
 > ### Part B
 >
