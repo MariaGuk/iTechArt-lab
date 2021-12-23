@@ -51,3 +51,7 @@
 > ### Part D
 >
 > _Replaced recursion on cycle, using async\await_ <br/>[Look here](https://codepen.io/Maria-Guk/pen/MWEedqw)
+
+# Singolo
+
+> _Singolo gh-pages_ <br/>[Look here](https://mariaguk.github.io/iTechArt-lab/)
