@@ -6,7 +6,8 @@
     "lint": "eslint ./src ",
     "lint-fix": "eslint ./src --fix",
     "precommit": "lint-staged",
-    "eslint": "node_modules/.bin/eslint src/"
+    "eslint": "node_modules/.bin/eslint src/",
+    "deploy": "gh-pages -d src/Singolo "
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-eslint-comments": "^3.2.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
